@@ -73,7 +73,7 @@
 
 * Existen verbos transitivos en los que por lo general la acción la realiza en sujeto y la recibe alguien diferente a él. 
 
-    - Cuando son reflexivos, y llevan “a sí (o mí o ti) mismo” se le añade SOLO y otros componentes no manuales.
+    - Cuando son reflexivos, y llevan "a sí mismo" o "a ti mismo" o "a mí mismo" se le añade SOLO y otros componentes no manuales.
 
 * Las oraciones recíprocas son aquellas que la acción es llevada a cabo y recibida por dos o más sujetos. 
 
@@ -105,6 +105,8 @@ y su estructura en la lengua de señas mexicana es LUGAR + AHÍ + SUJETO + VERBO
 como "el gato es alimentado por Pedro". No existen en la lengua de señas mexicana y para traducirlas se pasan a activa.
 
 * Las oraciones pasivas con "se", en las que el sujeto concuerda en número con el verbo se realizan en la lengua de señas mexicana como SUJETO + VERBO.
+
+* Las oraciones interrogativas parciales directas con "qué", "quién", "cuál", "cuánto", "cómo", "cuándo", "dónde", "por qué" se realizan en la lengua de señas mexicana como SUJETO + VERBO + COMPLEMENTOS + PRONOMBRE.
 
 TEXTO:
 

@@ -1,8 +1,6 @@
 import os
 from openai import OpenAI
 
-
-
 def send_code_to_vllm(system_prompt: str, user_prompt: str, base_url: str = "http://localhost:8000/v1", model_name: str = "your_model_name_here", reasoning_effort="medium"):
     """
     Sends code to a vLLM server using the OpenAI Python client via the Chat Completions API.
@@ -76,10 +74,10 @@ if __name__ == "__main__":
                 model_name=args.model_name,
                 reasoning_effort=args.reasoning_effort
             )
-            print("-" if result != row[1] else "+", result)
+            print("-" if result.lower().strip() != row[1].lower().strip() else "+", result)
             print()
             sys.stdout.flush()
-            if result == row[1]:
+            if result.lower().strip() == row[1].lower().strip():
                 hits += 1
             total += 1
     print(f"Hits: {hits}/{total}")

@@ -1,0 +1,56 @@
+  ﻿esp
+  lsm
+- ESPAÑA
+
+  yo voy
+  yo ir
++ YO IR
+
+  ve
+  tú ver
+- TÚ IR
+
+  vete
+  tú ir
++ TÚ IR
+
+  ve
+  tú ir
++ TÚ IR
+
+  vas
+  tú ir
++ TÚ IR
+
+  va
+  él ir
++ ÉL IR
+
+  vaya
+  él ir
+- TÚ IR
+
+  vaya
+  ella ir
+- TÚ IR
+
+  váyanse
+  ustedes ir
+- VOSOTROS IR
+
+  vamos
+  nosotros ir
++ NOSOTROS IR
+
+  vámonos
+  nosotros ir
++ NOSOTROS IR
+
+  van
+  ustedes ir
+- ELLOS IR
+
+  van
+  ellos ir
++ ELLOS IR
+
