@@ -142,7 +142,7 @@ with open(args.user_prompt, "r") as f:
     reader = csv.reader(f)
     for row in reader:
         DEFAULT_USER_PROMPT += row[0] + "\n"
-        RESPONSES[row[0]] = row[1]
+        RESPONSES[row[0]] = row[1].upper()
 
 with gr.Blocks(title="vLLM Local Interface for MSLG-SPA 2026") as demo:
     gr.Markdown("## vLLM Local Interface for MSLG-SPA 2026")

@@ -61,7 +61,7 @@ su abuela era monja,abuelo mujer suyo(a) monja
 nuestro,nuestro
 ellos,ellos
 eso,eso
-leímos un libro ayer ,ayer nosotros libro leer
+leímos un libro ayer,ayer nosotros libro leer
 leí un libro ayer,ayer yo libro leer
 leíste un libro ayer,ayer tú libro leer
 leyó un libro ayer,ayer él (ella) libro leer
@@ -87,7 +87,7 @@ tu abuelo estaba leyendo un libro ayer,ayer abuelo tuyo libro leer
 tu abuela estaba leyendo un libro ayer,ayer abuelo mujer tuya libro leer
 tu amiga estaba leyendo un libro ayer,ayer amigo mujer tuya libro leer
 tu amigo estaba leyendo un libro ayer,ayer amigo tuyo libro leer
-leímos el periódico ayer ,ayer nosotros periódico leer
+leímos el periódico ayer,ayer nosotros periódico leer
 leí el periódico ayer,ayer yo periódico leer
 leíste el periódico ayer,ayer tú periódico leer
 leyó el periódico ayer,ayer él (ella) periódico leer
@@ -112,7 +112,7 @@ tu abuelo estaba leyendo un periódico ayer,ayer abuelo tuyo periódico leer
 tu abuela estaba leyendo un periódico ayer,ayer abuelo mujer tuya periódico leer
 tu amiga estaba leyendo un periódico ayer,ayer amigo mujer tuya periódico leer
 tu amigo estaba leyendo un periódico ayer,ayer amigo tuyo periódico leer
-leímos una revista ayer ,ayer nosotros revista leer
+leímos una revista ayer,ayer nosotros revista leer
 leí una revista ayer,ayer yo revista leer
 leíste una revista ayer,ayer tú revista leer
 leyó una revista ayer,ayer él (ella) revista leer
@@ -636,7 +636,7 @@ mis hermanos,sobrino ellos
 mi hermana,hermano mujer mía
 mi primo,primo mío
 mis primos,primo ellos míos
-mi prima ,primo mujer mía
+mi prima,primo mujer mía
 mis primas,tió ellos míos
 mi amigo,amigo mío
 mis amigos,amigo ellos míos
@@ -1070,7 +1070,7 @@ tu maestro,maestro tuyo
 tu maestra,maestra tuya
 tu primo,primo tuyo
 tus primos,sobrino ellos tuyos
-tu prima ,primo mujer tuya
+tu prima,primo mujer tuya
 tus primas,primo mujer ellas tuyas
 tu hermana,hermano mujer tuya
 tus hermanas,hermano mujer ellas tuyas
@@ -1112,7 +1112,7 @@ sus hermanos,hermano ellos suyos
 su primo,primo suyo
 sus primos,primo mujer ellas tuyas
 su prima es baja,primo mujer suya baja
-su prima ,primo mujer suya
+su prima,primo mujer suya
 sus primas,primo mujer ellas suyas
 su hermana,hermano mujer suya
 su tía,tío mujer suya
@@ -1152,7 +1152,7 @@ su gato,gato suyo
 sus gatos,gato cl+cl+cl suyo
 su familia,familia suya
 su casa,casa suya
-su novio ,novio suyo
+su novio,novio suyo
 su novio es guapo,novio suyo guapo
 su novia,novia suya
 su novia es celosa,novio mujer suya celosa
@@ -1171,7 +1171,7 @@ nuestro sobrino,sobrino nuestro
 nuestra sobrina,sobrino mujer nuestra
 nuestro hermano,hermano suyo
 nuestro primo,primo nuestro
-nuestra prima ,primo mujer nuestra
+nuestra prima,primo mujer nuestra
 nuestra hermana,hermano mujer nuestra
 nuestra tía,tío mujer nuestra
 nuestro abuelo,abuelo nuestro
@@ -1344,7 +1344,7 @@ el mes pasado hizo mucho calor,mes pasado calor mucho
 el próximo mes hará calor,próximo mes calor
 antier hizo calor,antier calor
 la próxima semana hará calor,próxima semana calor
-hace viento ,viento
+hace viento,viento
 está haciendo mucho viento,viento mucho
 hace calor,calor
 hace mucho calor,calor mucho
@@ -2327,7 +2327,7 @@ no entienden,ellos entender no
 ellos entienden,ellos entender
 ellos no entienden,ellos entender no
 ustedes entienden,ustedes entender
-ustedes no entienden ,ustedes entender no
+ustedes no entienden,ustedes entender no
 mi papá entiende,papá mío entender
 mi mamá entiende,mamá mía entender
 mi tía entiende,tío mujer mía entender
@@ -2343,7 +2343,7 @@ mi amiga no entiende,amigo mujer mía entender no
 mi novio entiende,novio mío entender
 mi novio no entiende,novio mío entender no
 mi novia entiende,novio mujer mía entender no
-mi novia no entiende ,novio mujer mía entender no
+mi novia no entiende,novio mujer mía entender no
 yo soy miedosa,yo miedosa así
 yo soy miedoso,yo miedoso así
 tú eres miedosa,tú distraído así
@@ -2606,7 +2606,7 @@ mi novio estudia en la biblioteca,biblioteca ahí novio mío estudiar
 mi amiga estudia en la biblioteca,biblioteca ahí amigo mujer mía estudiar
 mi amigo estudia en la biblioteca,biblioteca ahí amigo mío estudiar
 estudiaré en la biblioteca mañana,mañana biblioteca ahí yo estudiar
-estudiaremos en la biblioteca mañana ,mañana biblioteca ahí yo estudiar
+estudiaremos en la biblioteca mañana,mañana biblioteca ahí nosotros estudiar
 estudiarás en la biblioteca mañana,mañana biblioteca ahí tú estudiar
 él estudiará en la biblioteca mañana,mañana biblioteca ahí él estudiar
 mis amigos estudiarán en la biblioteca mañana,mañana biblioteca ahí amigos ellos estudiar
@@ -2988,7 +2988,7 @@ mi mamá irá al banco mañana,mañana banco mamá mía ir
 mi papá irá al banco mañana,mañana banco papá mío ir
 él fue al banco hoy,pasado hoy él banco ir
 mi papá irá al banco mañana,mañana banco papá mío ir
-ella fue a la fiesta ,pasado ella fiesta ir
+ella fue a la fiesta,pasado ella fiesta ir
 nosotros fuimos a la fiesta,pasado nosotros fiesta ir
 ustedes fueron a la fiesta,pasado ustedes fiesta ir
 ellos fueron a la fiesta,pasado ellos fiesta ir
