@@ -1,7 +1,16 @@
 import os
 from openai import OpenAI
+import sacrebleu
 
-def send_code_to_vllm(system_prompt: str, user_prompt: str, base_url: str = "http://localhost:8000/v1", model_name: str = "your_model_name_here", reasoning_effort="medium"):
+def send_code_to_vllm(
+    system_prompt: str, 
+    user_prompt: str, 
+    base_url: str = "http://localhost:8000/v1", 
+    model_name: str = "your_model_name_here", 
+    reasoning_effort="medium",
+    max_tokens: int = 10024,
+    seed: int = 42
+    ):
     """
     Sends code to a vLLM server using the OpenAI Python client via the Chat Completions API.
     """
@@ -23,9 +32,9 @@ def send_code_to_vllm(system_prompt: str, user_prompt: str, base_url: str = "htt
             messages=messages,
             temperature=0.0,
             top_p=1.0,
-            max_tokens=1024,
+            max_tokens=max_tokens,
             reasoning_effort=reasoning_effort,
-            seed=42,
+            seed=seed,
         )
         return response.choices[0].message.content
     except Exception as e:
@@ -48,45 +57,54 @@ if __name__ == "__main__":
     
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--prompt", type=str, default="data/prompt1.txt")
-    parser.add_argument("--base_url", type=str, default="http://localhost:8000/v1")
-    parser.add_argument("--model_name", type=str, default="openai/gpt-oss-20b", choices=models)
+    #parser.add_argument("--base_url", type=str, default="http://192.168.3.121:8000/v1")
+    parser.add_argument("--base_url", type=str, default="http://192.168.3.121:11434/v1")
+    parser.add_argument("--model_name", type=str, default="gemma4:31b")
     parser.add_argument("--reasoning_effort", type=str, default="medium")
-    parser.add_argument("--test_suite", type=str, default="data/test-suite1.csv")
+    parser.add_argument("--prompt", type=str, default="data/prompt3.txt")
+    parser.add_argument("--test_suite", type=str, default="data/MSLG_SPA_train.csv")
+    parser.add_argument("--seed", type=int, default=42) 
+    parser.add_argument("--max_tokens", type=int, default=10024)
     args = parser.parse_args()
 
     import sys
     import csv
 
-    system_prompt = ""
+    prompt = ""
     with open(args.prompt, "r") as f:
         for line in f:
-            if line.startswith("#"):
-                pass
-            else:
-                system_prompt += line + "\n"
+            prompt += line
 
     hits = 0
     total = 0
 
+    print(prompt)
+
     with open(args.test_suite, "r") as f:
         test_suite = csv.reader(f)
         for row in test_suite:
-            print(" ", row[0])
-            print(" ", row[1].upper())
+            print("I:", row[0])
+            print("S:", row[1])
+            print("T:", row[2])
+            system_prompt = prompt
+            user_prompt = "Entrada: {input}\nSalida: ".format(input=row[1].strip())
+            #print(system_prompt)
+            #print(user_prompt)
             result = send_code_to_vllm(
                 system_prompt=system_prompt,
-                user_prompt=row[0].strip(),
+                user_prompt=user_prompt,
                 base_url=args.base_url,
                 model_name=args.model_name,
-                reasoning_effort=args.reasoning_effort
+                reasoning_effort=args.reasoning_effort,
+                max_tokens=args.max_tokens,
+                seed=args.seed
             )
-            if result:
-                result = result.strip().upper()
-            print("-" if not result or result.lower().strip() != row[1].lower().strip() else "+", result)
+            #if result:
+            #    result = result.strip().upper()
+            print("-:" if not result or result.lower().strip() != row[2].lower().strip() else "+:", result)
             print()
             sys.stdout.flush()
-            if result and result.lower().strip() == row[1].lower().strip():
+            if result and result.lower().strip() == row[2].lower().strip():
                 hits += 1
             total += 1
 

@@ -107,3 +107,4 @@ EJEMPLOS DE REFERENCIA
 - las niñas van a la escuela de lunes a viernes -> lunes a viernes niño mujer ellas escuela ir
 
 Ahora traduce esta oración del español a glosas de LSM siguiendo exactamente estas reglas:
+
